@@ -1,0 +1,61 @@
+body{
+    background-color: rgb(255, 0, 0);
+    text-align: center;
+}
+
+/* ESTILIZAÇÃO VIA TAG */
+
+
+ul{
+ background-color:gold;
+ list-style: none;
+}
+
+li{
+background-color: rgb(245, 239, 239);
+list-style: none;
+}
+
+li{
+    /* cor de fundo */
+    background-color: rgb(255, 208, 0);
+
+    /* cor do texto */
+    color: rgb(255, 0, 0);
+
+    /* largura do elemento */
+    width: 300px;
+
+    /* altura do elemento */
+    height: 50px;
+
+    /*tamanho da fonte  */
+    font-size: 30px;
+
+    /* espaço do elemento pra fora  */
+    margin-left: auto; 
+    margin-right: auto;
+}
+
+
+
+h2{
+color: rgb(255, 108, 10);
+font-size: 40px;
+
+/* estilo do texto */
+font-style: italic;
+
+ /*estilo da fonte */
+ font-family: 'Segoe UI', Tahoma,  sans-serif;
+}
+
+
+h2{
+color: rgb(253, 125, 20);
+font-size: 40px;
+font-style: italic;
+
+ /*estilo da fonte */
+ font-family: 'Segoe UI', Tahoma, sans-serif;
+}
