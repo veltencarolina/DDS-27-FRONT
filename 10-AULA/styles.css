@@ -59,3 +59,72 @@ background-color: rgb(255, 0, 221);
 border: 2px color pink; 
 }
 
+#caixa-unica{
+background-color: #ede9fe;
+padding: 10px;
+border: 2px solid purple;
+}
+
+/* seleciona todos os p que estão dentro de uma div */
+ div p{
+    color:aqua
+}
+
+/* sleciona todos os p que são filhos diretos da class especifica  */
+.pai-direto > p {
+    color: blueviolet;
+    padding: 5px;
+}
+
+/* seleciona todo todo p que vem depois de um h3, desde que seja irmão */
+h3 + p{
+    color: red
+}
+
+/* seleciona  todos os p que vem após o h4 desde que sejam irmão */
+h4~p {
+    background-color: deeppink;
+    color:rgb(250, 198, 226)
+}
+/* seleciona todos os input que tem texto */
+input[type= "text" ]{
+   border:2px solid crimson;
+   padding: 8px;
+   margin-right:10px; 
+}
+
+/* seleciona todosod link que tenham esse valor no href */
+a[href*= "microsoft"]{
+    color: indianred;
+    font-weight: bolder;
+
+}
+
+/* mesmo estilo para duas tags */
+h5, h6, h2{
+    color:purple;
+    margin: 5px 0px;
+    font-weight: bolder;
+}
+
+/* seleciona o elemento que tem duas classes ao mesmo tempo */
+.botao.ativo{
+    color: rgb(174, 255, 127);
+    padding: 50px;
+}
+
+/* seleciona o p desde que tenha a class aviso */
+p.aviso{
+    color:greenyellow
+}
+
+/* seleciona apenas a div que tenha o id painel*/
+div#painel{
+    background-color: chartreuse;
+    padding: 10px;
+}
+
+/* selecionando filho dentro de filho */
+#menu ul li a{
+color: darkturquoise;
+}
