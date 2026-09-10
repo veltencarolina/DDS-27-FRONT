@@ -1,0 +1,158 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+/* IMPORTAÇÃO DE FONTES DO GOOGLE */
+/* VIA URL */ 
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Scoutie+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+
+
+
+body{
+   background-color: rgb(249, 252, 252);
+   margin:20px;
+   color: black;
+   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h1{
+   font-family: "Roboto", sans-serif;
+   font-weight: 900;
+}
+h2{
+    font-family:"Roboto", sans-serif;
+    font-weight: 600;
+}
+
+/* estilização de varios elementos ao mesmo tempo*/
+h1,h2{
+    font-family: "Roboto", sans-serif;;
+    color: black;
+}
+
+/*estilização via class  */
+.bloco{
+    background-color: aliceblue;
+    border: 2px solid rgb(168, 173, 252);
+    padding: 15px;
+    margin-top: 5px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+/* importar fontes do projeto */
+@font-face {
+    font-family: "scoutieSans";
+    src: url(./fonts/scoutieSans.ttf);
+}
+
+/* usando a fonte do projeto */
+p{
+    font-family: "scoutieSans";
+    font-size: 15px;
+    color: darkblue;
+}
+
+/* pseudos classes */
+a{
+    color: orange;
+}
+a:link{
+    color: rgb(0, 67, 168);
+}
+
+/* links ja visitados */
+a:visited{
+    color: blueviolet;
+}
+/* link que esta ativo, que esta clicando */
+a:active{
+    color:cornflowerblue
+    
+}
+/* quando passa o mause em cima  */
+a:hover{
+    color: darkblue;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+/* quando passa o mouse e clica  */
+button:hover {
+    cursor: pointer;
+    background-color:rgb(231, 134, 250) ;
+    color:blueviolet;
+    padding:5px;
+}
+
+/* botão que esta ativo,que esta clicando */
+button:active{
+    transform: scaleX(2.6);
+    transform: scaleY(1.7);
+    transform: rotate(45deg);
+    transition: 1s;
+}
+
+/* input qundo esta selecionado */
+input:focus{
+    outline: none;
+    border: 2px solid blue;
+    background-color: azure;
+}
+/* input quando é obrigatorio */
+input:required{
+    border:2px solid red;
+}
+/* quando o preenchimento é valido */
+input:valid{
+    background-color: forestgreen;
+}
+
+/* quando o preenchimento é nao valido */
+input:invalid{
+    background-color: rgb(190, 252, 133);
+}
+/* quando o checkbox está marcado */
+input:checked{
+    accent-color: pink;
+}
+/*  estiliza os inputs desabilitados*/
+input:disabled{
+    background-color: beige;
+    color:#6b7280;
+}
+
+/* sleciona o primeiro filho o PRIMOGENITO */
+.lista-exemplo li:first-child{
+    font-weight: bold;
+    color:blueviolet
+
+}
+/* seleciona o ultimo filho */
+.lista-exemplo li:last-child{
+    font-weight: bold;
+    background-image: linear-gradient(red 20%, yellow 60% green 30%);
+}
+
+/* seleciona o ultimo filho */
+.lista-exemplo li:ntd-child(3){
+    background-color: gold;
+
+}
+/* selecionaespaços sem conteudo  */
+.caixa-vazia:empty{
+    width: 200px;
+    height: 150px;
+    background-color: pink ;
+}
+/* sleciona a primeira letra do texto */
+ .texto-especial::first-letter{
+    color: red;
+    front-size: 50px;
+
+}
+/* seleciona a primeira linha de um texto */
+texto-especial::first-line{
+    color: rgb(242, 255, 56);
+    front-size: 20px;
+}
