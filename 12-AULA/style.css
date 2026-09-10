@@ -156,3 +156,38 @@ texto-especial::first-line{
     color: rgb(242, 255, 56);
     front-size: 20px;
 }
+
+/* pseudo elementos  */
+/* insere items depois dos elementos */
+h2::before{
+    content: 🌞🔅🔆✨🏖️;
+}
+/* insere items depois dos elementos */
+h2::after{
+    content: 🌞🔅🔆✨🏖️;
+}
+/* estiliza o texto dentro do input */
+input::placeholder{
+    color: blueviolet;
+    font-style: italic;
+}
+
+/* estiliza o texto selecionado */
+::selection{
+    background-color: rgb(170, 170, 236);
+    color:rgb(104, 104, 163);
+}
+.lista-marker li::marker{
+    color:aquamarine;
+    font-size: 20px;
+    /* content: ; */
+}
+
+/* li::before{ */
+    /* content: ; */
+    /* display: inline-block ; */
+    /* background-image: ; */
+
+    /* width: 10px; */
+    /* height: 10px; */
+/* } */
