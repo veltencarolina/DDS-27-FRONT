@@ -1,0 +1,13 @@
+body{
+    background-color: aliceblue;
+}
+.icones{
+    font-size: 100px;
+    color: beige;
+}
+.icones:hover{
+    color: rgb(252, 252, 244);
+    background-color: mediumpurple;
+    font-size: 200px;
+    transition: 3s;
+}
