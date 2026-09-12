@@ -1,0 +1,162 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+background-color: rgb(252, 250, 249);
+color: black;
+}
+
+/* variaveis */
+:root{
+    --font-main:"Segoe UI", sans-serif;
+    --color-primary: rgb(201, 77, 250);
+    --color-text:rgb(20, 1, 1);
+    --color-bg-page: #e5e7eb;
+    --color-white: white;
+    --color-grey:grey;
+
+    /* estados e exemplos */
+    --blue-bg: #dbeafe;
+    --blue-border:#8caffc;
+    --green-bg: #dcfce7;
+    --green-border: pink;
+    --yellow-bg: #fef3c7;
+    --yelow-border: #d97706;
+
+    /* comparação */
+    --comparação-block-bg:lightblue;
+    --comparação-inline-bg:lightpink;
+    --comparação-inline-block-bg:#fde68a;
+    --observação-bg: #f3f4f6;
+
+    /* medidas */
+  --radius:10px;
+  --gap:10px;
+}
+
+/* estilo geral */
+body{
+    font-family: var(--font-main);
+    background-color:var(--color-bg-page);
+    color: var(--color-text);
+    margin: 20px;
+}
+
+h1,h2{
+    color:var(--color-primary);
+    text-align: center;
+}
+h1{
+    font-size:32px;
+
+}
+h2{
+    font-size: 24px;
+}
+h3{
+    margin-top:25px;
+}
+
+p{
+line-height: 1.7;
+
+}
+.bloco{
+    background-color:var(--color-white);
+    border:2px solid var(--color-grey);
+    border-radius:var(--radius);
+    padding:20px;
+    margin-bottom:20px;
+}
+
+/* comparação */
+.comparacao{
+border:2px dashed var(--color-grey);
+padding: 15px;
+margin-bottom:20px;
+}
+
+/* observação */
+.observacao{
+    background-color: var(--observação-bg);
+    border-left: 5px solid var(--color-primary);
+    padding:12px;
+}
+
+/* dispaly block */
+.exemplo-block div{
+    display:block;
+    background-color: var(--blue-bg);
+    border:2px solid var(--blue-border);
+    padding: 15px;
+    margin-bottom: 8px;
+}
+
+.comparacao.block div{
+    display: block;
+    background-color: var(--comparação-block-bg);
+    padding:10px;
+    margin-bottom:5px;
+}
+
+/* display inline */
+.exemplo-inline span{
+    display: inline;
+    background-color: var(--lightpink-bg);
+    border:2px solid var(--green-border);
+    padding:1px;
+    margin-left: 50px;
+    margin-top:100px;
+    margin-top: 100px;
+}
+
+.comparacao.inline span{
+    display:inline;
+    background-color: var(--comparação-inline-bg);
+    padding:10px;
+}
+/* display inline-block */
+.exemplo-inline-block div{
+    display: inline-block;
+    background-color:var(--yellow-bg);
+    border: 2px solid var(--yelow-border);
+    padding: 25px;
+    width: 150px;
+    height: 80px;
+    margin-right: 10px;
+    margin-bottom:5px;
+    text-align: center;
+    line-height: 80px;
+}
+
+.comparacao.inline-block div{
+    display: inline-block;
+    width:100px;
+    height: 60px;
+    background-color: var(--comparação-inline-block-bg);
+    padding:25px;
+    margin-right:10px;
+    text-align: center;
+    margin-bottom:5px;
+}
+
+/* display none */
+.none.exemplo{
+    display:flex;
+    gap: var(--gap);
+    background-color: var(--color-grey);
+    padding: 20px;
+
+}
+.none.exemplo div{
+    flex: 1;
+    background-color: var(--color-primary);
+    color:var(--color-white);
+    padding: 25px;
+    text-align: center;
+}
+.none-exemplo  .elemento-oculto{
+    display:none;
+}
