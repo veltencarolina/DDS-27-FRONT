@@ -1,0 +1,8 @@
+body{
+    background-color: red;
+}
+
+.partedecima{
+   display: flex;
+   gap: 20px;
+}
